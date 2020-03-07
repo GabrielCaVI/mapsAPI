@@ -69,21 +69,22 @@ function newSearch(){
         var r = results[0].geometry.location
         map.setCenter(r);
         var v = results[0].geometry.viewport
-        var ne  = {lat:v.Za.i, lng: v.Za.j}
-        var sw  = {lat:v.Ua.i, lng: v.Ua.j}
+        var ne  = {lng:v.Za.i, lat: v.Za.j}
+        var sw  = {lng:v.Ua.i, lat: v.Ua.j}
 
         north = ne.lat
         south = sw.lat
         east = ne.lng
-        west = ne.lng
+        west = sw.lng
 
-        // console.log({
-        //   "nort": north,
-        //   "south": south,
-        //   "east": east,
-        //   "west": west
-        // })
-
+        console.log({
+          "ne": ne,
+          "sw": sw,
+          "nort": north,
+          "south": south,
+          "east": east,
+          "west": west
+        })
         geonamepi(map)
         
       } else {
