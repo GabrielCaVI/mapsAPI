@@ -68,10 +68,24 @@ function newSearch(){
       if (status == 'OK') {
         var r = results[0].geometry.location
         map.setCenter(r);
-        // var marker = new google.maps.Marker({
-        //     map: map,
-        //     position: r
-        // });
+        var v = results[0].geometry.viewport
+        var ne  = {lat:v.Za.i, lng: v.Za.j}
+        var sw  = {lat:v.Ua.i, lng: v.Ua.j}
+
+        north = ne.lat
+        south = sw.lat
+        east = ne.lng
+        west = ne.lng
+
+        // console.log({
+        //   "nort": north,
+        //   "south": south,
+        //   "east": east,
+        //   "west": west
+        // })
+
+        geonamepi(map)
+        
       } else {
         alert('Geocode was not successful for the following reason: ' + status);
       }
