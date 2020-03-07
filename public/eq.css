@@ -1,0 +1,16 @@
+
+
+.search{
+    margin: 20%;
+}
+
+
+
+#map {
+    height: 50%;
+  }
+  /* Optional: Makes the sample page fill the window. */
+  html, body {
+    height: 100%;
+    margin: 2%;
+  }

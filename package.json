@@ -1,0 +1,22 @@
+{
+  "name": "earthquake",
+  "version": "1.0.0",
+  "description": "Earthquake Maps API",
+  "main": "./public/eq.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielCaVI/Earthquake.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Gabriel Carrion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabrielCaVI/Earthquake/issues"
+  },
+  "homepage": "https://github.com/GabrielCaVI/Earthquake#readme"
+}

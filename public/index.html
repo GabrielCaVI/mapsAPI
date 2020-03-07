@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Earthquake</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <script type='text/javascript' src='../config.js'></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>    <link rel="stylesheet" type="text/css" href="eq.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./eq.js"></script>
+
+  </head>
+  <body>
+    <h1 class="h1">Earthquake API</h1>
+    <form id="form-search" class="search m-3">
+        <div class="col-xs-2"></div>
+        <input id="location" class="form-control m-3" placeholder="enter location" type="text">
+        <button id="search" type="button" class="btn btn-primary">Search</button>
+    </form>
+    <div id="map"></div>
+    <script id="mapsUrl"></script>
+   
+  </body>
+</html>
+
